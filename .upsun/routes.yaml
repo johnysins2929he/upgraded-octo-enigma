@@ -1,3 +1,4 @@
-"/":
-  type: upstream
-  upstream: "app:http"
+routes:
+  "/":
+    type: upstream
+    upstream: "app:http"
