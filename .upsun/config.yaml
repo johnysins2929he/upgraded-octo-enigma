@@ -1,7 +1,9 @@
+volumes:
+  mydata:
+    type: writable
+
 applications:
   test:
     type: nodejs:20
     mounts:
-      mydata:
-        path: /data
-        type: writable
+      mydata: {}
