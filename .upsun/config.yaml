@@ -1,6 +1,7 @@
 applications:
   test:
     type: nodejs:20
-    web:
-      commands:
-        start: node app.js
+    disk: 50
+    mount:
+      writable:
+        path: /data
