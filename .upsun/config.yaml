@@ -1,6 +1,6 @@
-name: test
-type: nodejs:20
-
-web:
-  commands:
-    start: node app.js
+applications:
+  test:
+    type: nodejs:20
+    web:
+      commands:
+        start: node app.js
