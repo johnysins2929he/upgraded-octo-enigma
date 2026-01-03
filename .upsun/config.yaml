@@ -1,7 +1,5 @@
 applications:
   test:
     type: nodejs:20
-    disk: 50      # disk allocation in GB
     mounts:
-      mydata:
-        writable: true   # declares writable volume
+      "/data": "shared:files/data"
