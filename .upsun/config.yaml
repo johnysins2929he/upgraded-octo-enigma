@@ -1,7 +1,5 @@
 applications:
   test:
     type: nodejs:20
-    disk: 50
-    mount:
-      writable:
-        path: /data
+    mounts:
+      "/data": writable
