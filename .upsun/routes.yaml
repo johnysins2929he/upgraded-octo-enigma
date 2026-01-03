@@ -1,4 +1,4 @@
 routes:
-  "/":
+  "https://{default}/":
     type: upstream
     upstream: "test:http"
