@@ -1,9 +1,7 @@
-volumes:
-  mydata:
-    type: writable
-
 applications:
   test:
     type: nodejs:20
+    disk: 50      # disk allocation in GB
     mounts:
-      mydata: {}
+      mydata:
+        writable: true   # declares writable volume
