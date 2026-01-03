@@ -1,4 +1,4 @@
 routes:
   "/":
     type: upstream
-    upstream: "app:http"
+    upstream: "test:http"
