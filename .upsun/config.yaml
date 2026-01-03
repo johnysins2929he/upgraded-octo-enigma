@@ -2,4 +2,6 @@ applications:
   test:
     type: nodejs:20
     mounts:
-      "/data": writable
+      mydata:
+        path: /data
+        type: writable
